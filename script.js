@@ -1,10 +1,6 @@
-//your JS code here. If required.
-function delay(ms){
-	return new Promise (resolve =>
-		setTimeout(resolve,ms));
-}
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-async function handleFormSubmit(event){
+document.getElementById('myForm').addEventListener('submit', async function(event){
 	event.preventDefault();
 
 	const text = document.getElementById('text').value;
@@ -18,6 +14,4 @@ async function handleFormSubmit(event){
 	await delay(delayMs);
 
 	document.getElementById('output').textContent = text;
-}
-
-document.getElementById('form').addEventListener('submit', handleFormSubmit);
+});
