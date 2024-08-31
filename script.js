@@ -15,3 +15,5 @@ document.getElementById('myForm').addEventListener('submit', async function(even
 
 	document.getElementById('output').textContent = text;
 });
+
+document.getElementById('form').addEventListener('submit', handleFormSubmit);
