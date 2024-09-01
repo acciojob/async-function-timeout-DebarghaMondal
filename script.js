@@ -4,7 +4,7 @@ document.getElementById('myForm').addEventListener('submit', async function(even
 	event.preventDefault();
 
 	const text = document.getElementById('text').value;
-	const delayMs = parseInt(document.getElementById('delay').value, 10);
+	const delayMs = parseInt(document.getElementById('delay').value*1000, 10);
 
 	if(isNaN(delayMs) || delayMs < 0){
 		alert('Please enter a valid positive number for delay.');
