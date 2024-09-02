@@ -21,7 +21,7 @@ const handleSubmit = async (event) => {
     }
 
     // Introduce the delay using async/await
-    await delay(delayTime*1000);
+    await delay(delayTime);
 
     // Display the message after the delay
     document.getElementById('output').innerText = text;
